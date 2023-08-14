@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pong!</title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/pong.css">
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/pong.css" />
     <script src="/js/pong.js" defer></script>
   </head>
-  <body>  
-    <div class="pong-container" id="pong-container">    
-      <h1 id="pong-header">Pong!</h1>
+  <body>
+    <div class="pong-header" id="pong-header">
+      <a href='https://bzyhas.com/'><img src="assets/logo-shadow.png" alt="Logo"></a>
+      <h1>Pong!</h1>
+      <a href='https://github.com/DBHaslund/pong'><svg
+        width="50"
+        height="50"
+        viewBox="0 0 120 120"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M75.4592 61.4939C76.7533 61.4939 77.8856 62.0485 78.8561 63.1577C79.8266 64.2669 80.4968 65.4685 80.8665 66.7626C81.5135 68.7036 81.7215 70.6909 81.4904 72.7244C81.2593 74.7579 80.4043 76.6066 78.9254 78.2704C77.9087 79.3795 76.7533 79.9341 75.4592 79.9341C74.0727 79.9341 72.8942 79.3795 71.9237 78.2704C70.9531 77.1612 70.2368 75.9596 69.7746 74.6655C69.3125 72.7244 69.1969 70.7371 69.428 68.7036C69.6591 66.6701 70.4679 64.8215 71.8544 63.1577C72.9635 62.0485 74.1652 61.4939 75.4592 61.4939ZM44.6793 61.4939C45.9734 61.4939 47.1057 62.0485 48.0762 63.1577C49.0467 64.2669 49.7631 65.4685 50.2252 66.7626C50.7798 68.7036 50.9416 70.6909 50.7105 72.7244C50.4794 74.7579 49.6244 76.6066 48.1455 78.2704C47.1288 79.3795 45.9734 79.9341 44.6793 79.9341C43.2928 79.9341 42.1143 79.3795 41.1438 78.2704C40.1733 77.1612 39.4569 75.9596 38.9947 74.6655C38.5326 72.7244 38.417 70.7371 38.6481 68.7036C38.8792 66.6701 39.688 64.8215 41.0745 63.1577C42.1836 62.0485 43.3853 61.4939 44.6793 61.4939ZM93.4835 44.5789C97.8278 49.5702 99.9999 55.948 99.9999 63.7123C99.9999 70.3674 99.0294 75.6823 97.0883 79.6568C95.7943 82.0601 94.0843 84.1629 91.9583 85.9653C89.8324 87.7678 87.5678 89.1311 85.1646 90.0555C83.963 90.5176 82.692 90.9567 81.3518 91.3726C80.0115 91.7886 78.5557 92.1352 76.9843 92.4125C75.413 92.6898 73.9572 92.8977 72.6169 93.0364C71.2767 93.175 70.0057 93.2906 68.8041 93.383C67.6025 93.4754 66.3315 93.5448 64.9913 93.591C63.651 93.6372 62.2414 93.6603 60.7625 93.6603H57.1576L53.9687 93.5217L50.6412 93.3137L46.8977 92.9671C44.402 92.6898 41.9526 92.1814 39.5493 91.4419C36.2218 90.5176 33.0098 89.1311 29.9133 87.2825C26.8168 85.4338 24.5291 82.892 23.0502 79.6568C21.0167 75.6823 19.9999 70.3674 19.9999 63.7123C19.9999 56.1329 22.1721 49.7551 26.5164 44.5789C25.6845 41.9908 25.2686 39.3102 25.2686 36.5373C25.2686 32.84 26.1005 29.3276 27.7642 26C31.2767 26 34.2807 26.647 36.7764 27.9411C38.1629 28.5881 39.5955 29.3969 41.0745 30.3674C42.5534 31.338 44.1709 32.4702 45.9271 33.7643C50.6412 32.6551 55.5863 32.1005 60.7625 32.1005C65.3841 32.1005 69.8671 32.6089 74.2114 33.6256C77.4465 31.0375 80.4505 29.0965 83.2235 27.8024C85.7192 26.6008 88.7694 26 92.3743 26C93.9456 29.42 94.7313 32.9324 94.7313 36.5373C94.7313 39.3102 94.3154 41.9908 93.4835 44.5789ZM83.7781 83.123C85.3494 81.829 86.6435 80.1421 87.6603 78.0624C88.677 75.9827 89.1854 73.5563 89.1854 70.7834C89.1854 66.9012 88.0762 63.6199 85.8578 60.9393C83.8243 58.2588 80.8665 56.9185 76.9843 56.9185C76.2449 56.9185 75.1126 56.9879 73.5875 57.1265C72.0623 57.2652 70.0519 57.5194 67.5563 57.8891C66.4471 58.0739 65.2455 58.2126 63.9514 58.305C62.6574 58.3975 61.3633 58.4437 60.0693 58.4437C58.6828 58.4437 57.3425 58.3975 56.0485 58.305C54.7544 58.2126 53.5528 58.0739 52.4436 57.8891C50.0404 57.5194 48.0762 57.2652 46.5511 57.1265C45.0259 56.9879 43.8936 56.9185 43.1542 56.9185C39.272 56.9185 36.268 58.2588 34.1421 60.9393C31.9237 63.6199 30.8145 66.9012 30.8145 70.7834C30.8145 73.5563 31.3229 75.9827 32.3396 78.0624C33.3564 80.1421 34.6504 81.829 36.2218 83.123C37.8856 84.3247 39.8266 85.249 42.045 85.896C44.4482 86.6355 46.7128 87.1207 48.8388 87.3518C50.9647 87.5829 53.3217 87.6984 55.9098 87.6984H64.0901C66.7706 87.6984 69.1507 87.5829 71.2304 87.3518C73.3102 87.1207 75.5516 86.6355 77.9549 85.896C80.1732 85.249 82.1143 84.3247 83.7781 83.123Z"
+          fill="#fff"
+        />
+        <circle cx="60" cy="60" r="59.5" stroke="#fff" />
+      </svg></a>
+    </div>
+    <div class="pong-container" id="pong-container">
       <p id="score">0 - 0</p>
       <button class="pong-menu-button" id="pong-menu-button">
         <span></span>
@@ -20,29 +35,55 @@
       </button>
       <menu class="pong-menu" id="pong-menu">
         <div class="pong-menu" id="pong-main-menu">
-            <button class="pong-menu" id="continue">Continue</button>
-            <button class="pong-menu" id="start-new">Start new</button>
-            <button class="pong-menu" id="keybindings">Keybindings</button>
+          <button class="pong-menu" id="continue">Continue</button>
+          <button class="pong-menu" id="start-new">Start new</button>
+          <button class="pong-menu" id="keybindings">Keybindings</button>
         </div>
         <div class="keybind-menu" id="pong-keybind-menu">
-            <text class="keybind-menu">Player 1 up</text>
-            <input type="text" class="keybind-menu" id="p1-up" minlength="1" maxlength="1">
-            <text class="keybind-menu">Player 1 down</text>
-            <input type="text" class="keybind-menu" id="p1-down" minlength="1" maxlength="1">
-            <text class="keybind-menu">Player 2 up</text>
-            <input type="text" class="keybind-menu" id="p2-up" minlength="1" maxlength="1">
-            <text class="keybind-menu">Player 2 down</text>
-            <input type="text" class="keybind-menu" id="p2-down" minlength="1" maxlength="1">
+          <text class="keybind-menu">Player 1 up</text>
+          <input
+            type="text"
+            class="keybind-menu"
+            id="p1-up"
+            minlength="1"
+            maxlength="1"
+          />
+          <text class="keybind-menu">Player 1 down</text>
+          <input
+            type="text"
+            class="keybind-menu"
+            id="p1-down"
+            minlength="1"
+            maxlength="1"
+          />
+          <text class="keybind-menu">Player 2 up</text>
+          <input
+            type="text"
+            class="keybind-menu"
+            id="p2-up"
+            minlength="1"
+            maxlength="1"
+          />
+          <text class="keybind-menu">Player 2 down</text>
+          <input
+            type="text"
+            class="keybind-menu"
+            id="p2-down"
+            minlength="1"
+            maxlength="1"
+          />
         </div>
         <div class="record-key" id="record-key">
-            <text class="record-key" ><span>Press Key</span></text>
+          <text class="record-key"><span>Press Key</span></text>
         </div>
         <div class="menu-nav" id="menu-nav">
           <button class="keybind-menu" id="back">Back</button>
           <button class="keybind-menu" id="reset">Reset</button>
         </div>
       </menu>
-      <canvas aria-label="Pong game">Your browser doesn't support canvas.</canvas>
+      <canvas aria-label="Pong game"
+        >Your browser doesn't support canvas.</canvas
+      >
     </div>
   </body>
 </html>

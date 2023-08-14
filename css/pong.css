@@ -2,6 +2,19 @@ body {
   background-color: #111;
 }
 
+.pong-header {
+  display: flex;
+  margin: 1em 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.pong-header img {
+  width: 50px;
+}
+.pong-header h1 {
+  color: #fdfdfd;
+}
+
 .pong-container {
   box-sizing: border-box;
   position: relative;
@@ -9,11 +22,7 @@ body {
   text-align: center;
 }
 .pong-container canvas {
-  border: 3px solid #FF0000;
-}
-.pong-container h1 {
-  color: #fdfdfd;
-  margin: 1em auto;
+  border: 3px solid #ff0000;
 }
 .pong-container p {
   position: absolute;
@@ -29,9 +38,9 @@ body {
   position: absolute;
   margin: auto;
   right: 1em;
-  top: 5em;
+  top: 1em;
   background-color: transparent;
-  border-color: #FF0000;
+  border-color: #ff0000;
   border-radius: 20%;
   opacity: 80%;
 }
@@ -52,7 +61,7 @@ body {
   width: 40%;
   height: 50%;
   background: rgba(100, 100, 100, 0.8);
-  border: 2px solid #FF0000;
+  border: 2px solid #ff0000;
   border-radius: 1em;
 }
 .pong-container menu.pong-menu div.pong-menu {
@@ -103,7 +112,7 @@ body {
   outline: none;
 }
 .pong-container menu.pong-menu div.keybind-menu input.keybind-menu:focus {
-  outline: #FF0000 solid 1px;
+  outline: #ff0000 solid 1px;
 }
 .pong-container menu.pong-menu div.keybind-menu button.keybind-menu {
   width: 10em;
