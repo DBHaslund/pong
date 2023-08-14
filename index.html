@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong!</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/pong.css">
+    <script src="/js/pong.js" defer></script>
+  </head>
+  <body>  
+    <div class="pong-container" id="pong-container">    
+      <h1 id="pong-header">Pong!</h1>
+      <p id="score">0 - 0</p>
+      <button class="pong-menu-button" id="pong-menu-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <menu class="pong-menu" id="pong-menu">
+        <div class="pong-menu" id="pong-main-menu">
+            <button class="pong-menu" id="continue">Continue</button>
+            <button class="pong-menu" id="start-new">Start new</button>
+            <button class="pong-menu" id="keybindings">Keybindings</button>
+        </div>
+        <div class="keybind-menu" id="pong-keybind-menu">
+            <text class="keybind-menu">Player 1 up</text>
+            <input type="text" class="keybind-menu" id="p1-up" minlength="1" maxlength="1">
+            <text class="keybind-menu">Player 1 down</text>
+            <input type="text" class="keybind-menu" id="p1-down" minlength="1" maxlength="1">
+            <text class="keybind-menu">Player 2 up</text>
+            <input type="text" class="keybind-menu" id="p2-up" minlength="1" maxlength="1">
+            <text class="keybind-menu">Player 2 down</text>
+            <input type="text" class="keybind-menu" id="p2-down" minlength="1" maxlength="1">
+        </div>
+        <div class="record-key" id="record-key">
+            <text class="record-key" ><span>Press Key</span></text>
+        </div>
+        <div class="menu-nav" id="menu-nav">
+          <button class="keybind-menu" id="back">Back</button>
+          <button class="keybind-menu" id="reset">Reset</button>
+        </div>
+      </menu>
+      <canvas aria-label="Pong game">Your browser doesn't support canvas.</canvas>
+    </div>
+  </body>
+</html>
